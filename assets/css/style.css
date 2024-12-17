@@ -1,0 +1,183 @@
+.swiper {
+    overflow: hidden;
+}
+
+.swiper-wrapper2 {
+    display: flex;
+    animation: slide 12s linear infinite;
+}
+
+.swiper-slide {
+    display: block;
+    width: 25%;
+    border-radius: 38px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+.white {
+    color: #fff;
+}
+
+.image-1 {
+    position: relative;
+    bottom: 230px;
+}
+.buttons{
+    display: flex;
+}
+
+.overlapping-container {
+    position: relative;
+    width: 100%;
+    /* max-width: 800px;
+    margin: 0 auto; */
+    /* height: 400px; */
+}
+
+.overlapping-card {
+    position: absolute;
+    width: 220px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.overlapping-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.overlapping-card .icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Positioning for exact overlap effect */
+.card-1 {
+    top: 0;
+    left: 50px;
+}
+
+.card-2 {
+    top: 0;
+    left: 320px;
+}
+
+.card-3 {
+    top: 120px;
+    left: 180px;
+}
+
+.card-4 {
+    top: 250px;
+    left: 50px;
+}
+
+.card-5 {
+    top: 250px;
+    left: 320px;
+}
+
+.card-6 {
+    top: 380px;
+    left: 180px;
+}
+
+@media screen and (max-width: 1200px) {
+.text-1{
+    margin-left: 100px;
+}
+}
+@media screen and (max-width: 992px) {
+.overlapping-container{
+    margin-top: 600px;
+}
+.image-1{
+    padding-top: 300px;
+}
+.text-1{
+    padding-top: 600px;
+}
+
+}
+@media screen and (max-width: 524px) {
+.overlapping-card{
+    position: absolute;
+    width: 150px;  
+}
+
+.text-1{
+    margin-left: 10px;
+}
+.overlapping-container{
+    margin-right: 0px;
+}
+}
+@media screen and (max-width: 480px) {
+    /* .card-6{
+        left: 6;
+    }
+    .card-5{
+        left: 8;
+    
+    }
+    .card-4{
+        left: 0;
+    }
+    .card-3{
+        left: 8;
+    }
+    .card-2{
+        left: 1;
+    }
+    .card-1{
+        left: 0;
+    } */
+    .buttons{
+        display: block;
+        width: 50%;
+    }
+    .image-1{
+        width: 100%;
+     } 
+     .overlapping-container{
+        display: none;
+   }
+   .buttons{
+    width: 100%;
+}
+.btn-1{
+    margin: 10px;
+}
+    
+}
+@media screen and (max-width: 424px) {
+    .overlapping-container{
+         display: none;
+    }
+    .image-1{
+       width: 100%;
+    }
+    .buttons{
+        width: 100%;
+    }
+    .btn-1{
+        margin: 10px;
+    }
+}
