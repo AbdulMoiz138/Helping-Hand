@@ -98,7 +98,13 @@
     top: 380px;
     left: 180px;
 }
+.icon-portion{
+     margin-top: 200px;
+}
 
+.slider-portion{
+    margin-top: 250px;
+}
 @media screen and (max-width: 1200px) {
 .text-1{
     margin-left: 100px;
@@ -106,15 +112,20 @@
 }
 @media screen and (max-width: 992px) {
 .overlapping-container{
-    margin-top: 600px;
+    margin-top:0;
 }
 .image-1{
-    padding-top: 300px;
+    display: none;
 }
 .text-1{
     padding-top: 600px;
 }
-
+.slider-portion{
+    margin-top: 0px;
+}
+.icon-portion{
+    margin-top: 0px;
+}
 }
 @media screen and (max-width: 524px) {
 .overlapping-card{
@@ -128,6 +139,7 @@
 .overlapping-container{
     margin-right: 0px;
 }
+
 }
 @media screen and (max-width: 480px) {
     /* .card-6{
@@ -165,6 +177,11 @@
 .btn-1{
     margin: 10px;
 }
+.text-1{
+    padding-top: 0px;
+}
+
+
     
 }
 @media screen and (max-width: 424px) {
